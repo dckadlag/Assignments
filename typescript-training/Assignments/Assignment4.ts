@@ -6,16 +6,16 @@ let balance =0, suspicious=0;
 
 for (let i=0;i<transcations.length;i++)
 {
-    if(transcations[i]>0){
+    if(transcations[i]!>0){
         credit++;
-        creditAmount+=transcations[i];
+        creditAmount+=transcations[i]!;
     }else
     {
         debit++;
-        debitAmount+=transcations[i];
+        debitAmount+=transcations[i]!;
     }
-    balance+=transcations[i];
-    if(transcations[i]>10000 || transcations[i]<-10000)
+    balance+=transcations[i]!;
+    if(transcations[i]!>10000 || transcations[i]!<-10000)
     {
         console.log("suspicious Transcations", transcations[i] );
         suspicious++;

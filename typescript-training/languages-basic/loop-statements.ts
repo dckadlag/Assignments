@@ -84,3 +84,20 @@ let empData:empInfo ={
 for (let key in empData.address){
     console.log(key);
 }
+
+//do while loop=>execute the statement at least once and then check for condition 
+//syntax=>
+//do{
+//statement to execute
+//}while(condition to check)
+ let x:number=0;
+// while(x>0){
+//     console.log("referesh the page");
+//     x++;
+// }
+
+do{
+    console.log("referesh the page");
+    x++;
+  }  while(x>0);
+
